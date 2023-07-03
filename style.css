@@ -1,7 +1,40 @@
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+body {
+    background-color: #131316;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* Thanks for the scroll animation code: https: //www.youtube.com/watch?v=T33NN_pPeNI */
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translate(-100%);
+    transition: all 4s; 
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
 }
 
 .image {
@@ -9,6 +42,19 @@
     height: 550px;
     background-size: cover;
     background-repeat: no-repeat;
+    transition: all 3s;
+}
+
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-line: ;
+    text-decoration-thickness: ;
+    color: white;
+    text-decoration-style: ;
+    text-decoration-color: white;
 }
 
 .spacer {
