@@ -29,9 +29,9 @@
 
                 let xoff = 0;
                 for (let x = 0; x <= width; x += 10) {
-                    let y = map(noise(xoff, yoff), 0, 1, 200, 300);
+                    let y = map(noise(xoff, yoff), 0.2, 0.4, 300, 400);
                     vertex(x, y);
-                    xoff += 0.05;
+                    xoff += 0.5;
                 }
                 yoff += 0.01;
                 vertex(width, height);
