@@ -1,0 +1,81 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.image {
+    width: 500px;
+    height: 550px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.spacer {
+    height: 100%;
+    visibility: hidden;
+}
+
+#image1 {
+    background-image: url('img/Artboard-1.png');
+}
+
+#image1:hover {
+    background-image: url('img/Artboard-1-1.png');
+}
+
+#image2 {
+    background-image: url('img/Artboard-2.png');
+}
+
+#image2:hover {
+    background-image: url('img/Artboard-2-1.png');
+}
+
+#image3 {
+    background-image: url('img/Artboard-3.png');
+}
+
+#image3:hover {
+    background-image: url('img/Artboard-3-1.png');
+}
+
+#image4 {
+    background-image: url('img/Artboard-4.png');
+}
+
+#image4:hover {
+    background-image: url('img/Artboard-4-1.png');
+}
+
+#image5 {
+    background-image: url('img/Artboard-5.png');
+}
+
+#image5:hover {
+    background-image: url('img/Artboard-5-1.png');
+}
+
+#image6 {
+    background-image: url('img/Artboard-6.png');
+}
+
+#image6:hover {
+    background-image: url('img/Artboard-6-1.png');
+}
+
+#image7 {
+    background-image: url('img/Artboard-7.png');
+}
+
+#image7:hover {
+    background-image: url('img/Artboard-7-1.png');
+}
+
+#image8 {
+    background-image: url('img/Artboard-8.png');
+}
+
+#image8:hover {
+    background-image: url('img/Artboard-8-1.png');
+}
