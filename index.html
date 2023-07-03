@@ -6,9 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Scream by Jenny Hedley</title>
     <link rel = "stylesheet" href = "style.css">
+        <style>
+            canvas {
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: -1;
+            }
+        </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script>
+            let yoff = 0.0;
+
+            function setup() {
+                createCanvas(windowWidth, windowHeight);
+            }
+
+            function draw() {
+                background(51);
+                fill(255);
+                beginShape();
+
+                let xoff = 0;
+                for (let x = 0; x <= width; x += 10) {
+                    let y = map(noise(xoff, yoff), 0, 1, 200, 300);
+                    vertex(x, y);
+                    xoff += 0.05;
+                }
+                yoff += 0.01;
+                vertex(width, height);
+                vertex(0, height);
+                endShape(CLOSE);
+            }
+
+            function windowResized() {
+                resizeCanvas(windowWidth, windowHeight);
+            }
+    </script>
     <script defer src="app.js"></script>
 </head>
 <body>
+
     <section class="hidden">
         <h1>The Scream</h1>
         <p>by Jenny Hedley | <a href="https://jennyhedley.github.io/ ">jennyhedley.github.io</a></p>
@@ -45,6 +83,5 @@
     <section class="hidden">
             <div class="image" id="image8"><span class="spacer"></span></div>
     </section>
-
 </body>
 </html>
